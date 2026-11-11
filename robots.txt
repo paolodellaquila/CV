@@ -1,0 +1,22 @@
+# https://paolodellaquila.github.io/CV/
+User-agent: *
+Allow: /
+
+# Index public pages aggressively for SEO
+Allow: /index.html
+Allow: /privacy-policy.html
+Allow: /cookie-policy.html
+Allow: /assets/images/
+Allow: /assets/cv.pdf
+
+# Soft-discourage aggressive email harvesters (honored by polite bots only)
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+Sitemap: https://paolodellaquila.github.io/CV/sitemap.xml

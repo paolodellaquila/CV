@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FD">
+  <rect width="64" height="64" rx="14" fill="#1B263B"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="13" fill="none" stroke="#149DDD" stroke-width="2"/>
+  <text x="32" y="40" text-anchor="middle" font-family="Syne, Arial, sans-serif" font-size="22" font-weight="700" fill="#00D4AA">FD</text>
+</svg>
