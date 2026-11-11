@@ -327,9 +327,14 @@ a:hover {
   position: relative;
   display: grid;
   gap: 2rem;
-  padding: 2.5rem 0 3.5rem;
+  padding: 3.5rem 0 4rem;
   min-height: calc(100svh - var(--header-h));
   align-items: center;
+}
+
+.hero > .container,
+.hero__content.container {
+  width: min(100% - 2rem, var(--container));
 }
 
 .hero__bg {
@@ -449,41 +454,6 @@ a:hover {
 .hero__stats span {
   color: var(--color-muted);
   font-size: 0.82rem;
-}
-
-.hero__portrait {
-  width: min(100% - 2rem, 360px);
-  margin-inline: auto;
-}
-
-.hero__portrait-frame {
-  position: relative;
-  border-radius: 28px;
-  overflow: hidden;
-  border: 1px solid rgba(20, 157, 221, 0.35);
-  box-shadow: var(--shadow-glow);
-  transform: rotate(-1.5deg);
-  animation: floaty 7s var(--ease) infinite;
-}
-
-.hero__portrait-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 55%, rgba(4, 11, 20, 0.45));
-  pointer-events: none;
-}
-
-.hero__portrait-frame img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
-}
-
-@keyframes floaty {
-  0%, 100% { transform: rotate(-1.5deg) translateY(0); }
-  50% { transform: rotate(-1.5deg) translateY(-10px); }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1062,20 +1032,15 @@ a:hover {
   }
 
   .hero {
-    grid-template-columns: 1.15fr 0.85fr;
-    width: min(100% - 2rem, var(--container));
-    margin-inline: auto;
-    gap: 2rem;
-    padding-top: 3rem;
+    padding-top: 4.5rem;
   }
 
-  .hero__content.container {
-    width: 100%;
+  .hero__lead {
+    max-width: 44rem;
   }
 
-  .hero__portrait {
-    width: 100%;
-    margin: 0;
+  .hero__stats {
+    max-width: 40rem;
   }
 
   .about-grid,
@@ -1139,11 +1104,6 @@ a:hover {
     width: auto;
     margin-top: 0;
     margin-left: 0.35rem;
-  }
-
-  .hero {
-    grid-template-columns: 1.25fr 0.75fr;
-    gap: 3rem;
   }
 
   .about-grid {

@@ -7,7 +7,6 @@ Allow: /index.html
 Allow: /privacy-policy.html
 Allow: /cookie-policy.html
 Allow: /assets/images/
-Allow: /assets/cv.pdf
 
 # Soft-discourage aggressive email harvesters (honored by polite bots only)
 User-agent: EmailCollector
